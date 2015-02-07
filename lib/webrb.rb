@@ -1,6 +1,7 @@
 require "webrb/version"
 require "webrb/routing"
-require "webrb/array"
+require "webrb/util"
+require "webrb/dependencies"
 
 module Webrb
   class Application
