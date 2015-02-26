@@ -2,6 +2,7 @@ require "webrb/version"
 require "webrb/routing"
 require "webrb/util"
 require "webrb/dependencies"
+require "webrb/controller"
 
 module Webrb
   class Application
@@ -10,13 +11,6 @@ module Webrb
       controller = klass.new(env)
       text = controller.send(act)
       [200, {"Content-Type" => 'text/html'}, [text]]
-    end
-  end
-
-  class Controller
-    attr_reader :env
-    def initialize env
-      @env = env
     end
   end
 end

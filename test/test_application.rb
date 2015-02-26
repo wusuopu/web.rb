@@ -3,7 +3,15 @@
 
 require_relative "test_helper"
 
+class TestController < Webrb::Controller
+  def index
+    "Hello!"
+  end
+end
 class TestApp < Webrb::Application
+  def get_controller_and_action env
+    [TestController, "index"]
+  end
 end
 
 class WebrbAppTest < Test::Unit::TestCase
