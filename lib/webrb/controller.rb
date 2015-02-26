@@ -2,9 +2,11 @@
 #-*- coding:utf-8 -*-
 
 require "erubis"
+require "webrb/file_model"
 
 module Webrb
   class Controller
+    include Webrb::Model
     attr_reader :env
     def initialize env
       @env = env

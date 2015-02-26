@@ -3,6 +3,7 @@ require "webrb/routing"
 require "webrb/util"
 require "webrb/dependencies"
 require "webrb/controller"
+require "webrb/file_model"
 
 module Webrb
   class Application
