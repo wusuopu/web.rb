@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+
+gem 'webrb', :path => "../"
+
+group :development do
+  gem 'rerun'
+  gem 'listen'
+end
